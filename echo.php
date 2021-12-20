@@ -1,13 +1,18 @@
 <?php
 
-    echo "<b>Hello Word!</b>";
-
+echo "<b>Hello Word!</b>";
+$nome = "Ricardo";
+$ano = 34;
 
 ?>
 
-<html>
-    <heade>
-        <title>Meu primeiro exemplo</title>
-    </heade>
-
-</html>
+<table width="100%" color="c0c0c0" border="1">
+    <tr>
+        <td>Nome</td>
+        <td>Ano</td>
+    </tr>
+    <tr>
+        <td><?= $nome ?></td>
+        <td><?= $ano ?></td>
+    </tr>
+</table>
