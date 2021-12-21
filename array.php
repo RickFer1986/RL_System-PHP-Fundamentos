@@ -31,9 +31,19 @@
     echo $nome[2];
     
     echo "<br>";
+    
     # Terceira forma de apresentar Array
-
     $contagem = array(1,2,3,4,5);
-
+    
     echo $contagem[4];
+    echo "<br>";
+    
+    # Descreve o Array e suas posições
+    $cores = array("Azul", "Vermelho", "Verde", "Amarelo");
+    print_r($cores);
+    
+
+
+
+
 ?>
