@@ -5,7 +5,7 @@
 # strtolower: transforma todas as letra em minusculo
 # strtoupper: transforma todas as letras em maiusculo
 
-$nome = ucwords(strtolower($_POST['nome']));
+$nome = trim(ucwords(strtolower($_POST['nome'])));
 
 if($nome == ""){
     echo "Preencha o campo nome";
@@ -21,6 +21,8 @@ fwrite($arquivo, $nome. "\r\n");
 fclose($arquivo);
 
 echo "<br><br>";
+
+header("Location: listar.php");
 
 ?>
 
